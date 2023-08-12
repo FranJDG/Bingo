@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>pngegg-_1_.ico</ApplicationIcon>
+    <PackageIcon>pngegg (1).png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="losbingueros.png" />
+    <None Remove="pngegg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="pngegg-_1_.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\pngegg (1).png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="losbingueros.png" />
+    <Resource Include="pngegg.png" />
+  </ItemGroup>
+
+</Project>
